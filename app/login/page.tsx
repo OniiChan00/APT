@@ -89,7 +89,7 @@ export default function Login({params}: Props) {
                       <button className="border border-red-white px-[365px] py-2 bg-blue-500 rounded-md hover:bg-blue-600" onClick={login}> Login</button>
                     </div>
                     <div className="flex justify-center">
-                        <h5 className="text-black">Didn't have account ?</h5>
+                        <h5 className="text-black">Didn&apos;t have account ?</h5>
                         <h5 className="text-violet-400 cursor-pointer font-bold"> &nbsp;sign up</h5>
                     </div>
               </div>
