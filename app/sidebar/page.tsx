@@ -14,6 +14,7 @@ type Props = {}
 export default function Sidebar({ }: Props) {
     const [ToggleCollapse, setToggleCollapse] = useState(false)
     const [pages, setPage] = useState(1)
+    const a = "test"
     const Menu = [
         {
             index: 1,

@@ -1,12 +1,22 @@
 import "./globals.css";
 import Sidebar from "./sidebar/page";
+import { Inter } from 'next/font/google'
 import Home from "./home/page";
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+
+
+{
   return (
     <html>
     <body>
