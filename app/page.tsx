@@ -45,7 +45,7 @@ export default function page({ }: Props) {
 
 
           <div className='text-white h-36 flex items-center justify-center text-xl'>
-            {!tokken &&<button className='bg-blue-500 hover:bg-blue-600 px-4 py-4 rounded-md'>Login to use this website</button>}
+            {!tokken &&<button className='bg-blue-500 hover:bg-blue-600 px-4 py-4 rounded-md' onClick={()=>{window.location.href = '/login'}}>Login to use this website</button>}
       </div>
       </div>
      

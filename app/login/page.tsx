@@ -31,7 +31,7 @@ export default function Login({params}: Props) {
     console.log(password)
 
     //fetch data from the server port : 8765 using axios
-    const response = await axios.post('http://localhost:8765/API/login', {
+    const response = await axios.post('http://13.210.146.132:8765/API/login', {
       username: username,
       password: password
     }).then((response) => {

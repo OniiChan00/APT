@@ -25,7 +25,7 @@ type Props = {}
 const logout = async () => {
     setCookie('token', '', {path: '/'})
     console.log('logout success')
-    window.location.href = 'http://localhost:3001/login'
+    window.location.href = '/login'
 }
 
 export default function Sidebar({ }: Props) {
@@ -52,7 +52,7 @@ export default function Sidebar({ }: Props) {
     ]
 
 
-    const [tokken, setTokken] = useState(getCookie('token')) || ''
+    const [tokken, setTokken] = useState(getCookie('token') || '') 
     console.log(tokken)
     return (
         <div className={`flex h-screen ${ToggleCollapse ? "w-72" : "w-16"} px-4 pt-8 pb-4 bg-white justify-between flex-col shadow-2xl duration-300`}>
