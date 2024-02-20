@@ -1,13 +1,14 @@
 import "./globals.css";
 import Sidebar from "./sidebar/page";
+import dynamic from 'next/dynamic'
 import { Inter } from 'next/font/google'
-import Home from "./home/page";
 
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 })
+
 
 export default function RootLayout({
   children,
