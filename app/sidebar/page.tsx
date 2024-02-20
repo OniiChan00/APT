@@ -58,7 +58,7 @@ export default function Sidebar({ }: Props) {
         <div className={`flex h-screen ${ToggleCollapse ? "w-72" : "w-16"} px-4 pt-8 pb-4 bg-white justify-between flex-col shadow-2xl duration-300`}>
             <div className={`flex flex-col`}>
                 <div className={`flex items-center justify-between relative`}>
-                    <div className={`flex item-center pl-1 gap-4 cursor-pointer`} onClick={() =>{window.location.href = 'http://localhost:3000/'}}>
+                    <div className={`flex item-center pl-1 gap-4 cursor-pointer`} onClick={() =>{window.location.href = '/'}}>
                         <AiOutlineAppstoreAdd className={`text-4xl text-indigo-500 ${ToggleCollapse && "rotate-[360deg]"} duration-1000`} />
                         <span className={`text-3xl font-mono ${!ToggleCollapse && "scale-0"} duration-200`}>GenTicXPert</span>
                     </div>

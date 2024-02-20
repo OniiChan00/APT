@@ -42,7 +42,7 @@ export default function Login({params}: Props) {
         setCookie('token', data.token, {path: '/'})
         setCookie('username', username, {path: '/'})
         console.log('login success')
-        window.location.href = 'http://localhost:3000/home'
+        window.location.href = '/home'
     }
          }   
     ).catch((error) => {
