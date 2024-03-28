@@ -18,19 +18,8 @@ const inter = Josefin_Sans({
 
 
 
-
-
-type Props = {
-  params: { slug: string };
-}
-
-export default function Generate({params}: Props) {
+export default function Generate() {
   
-
-  
-
-
-  const { slug } = params;
   const instrunction = ['เขียนสคริปต์รีวิวเครืองสำอาง', "Storytelling(Sci-fi)", "สคริปต์ Podcast (Sci-fi)",'อื่นๆ']
   const [SelectTopic, setSelectTopic] = useState('เขียนสคริปต์รีวิวเครืองสำอาง')
   const [Data, setData] = useState('')
