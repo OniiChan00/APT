@@ -20,7 +20,25 @@ const inter = Josefin_Sans({
 
 export default function Generate() {
   
-  const instrunction = ['เขียนสคริปต์รีวิวเครืองสำอาง', "Storytelling(Sci-fi)", "สคริปต์ Podcast (Sci-fi)",'อื่นๆ']
+  const instrunction =
+  [
+    {
+        index: 1,
+        title: 'เขียนสคริปต์รีวิวเครืองสำอาง',
+    },
+    {
+        index: 2,
+        title: "Storytelling(Sci-fi)",
+    },
+    {
+        index: 3,
+        title:"สคริปต์ Podcast (Sci-fi)",
+    },
+    {
+      index: 4,
+      title:'อื่นๆ',
+  }
+  ]
   const [SelectTopic, setSelectTopic] = useState('เขียนสคริปต์รีวิวเครืองสำอาง')
   const [Data, setData] = useState('')
 
@@ -48,10 +66,10 @@ export default function Generate() {
                             <h1 className="text-3 py-2 px-2 font-bold"> Instruction </h1>
                             <>
                             {instrunction.map((item) => (
-                              <div className="border border-black m-1 p-1 cursor-pointer rounded-md ">
+                              <div className="border border-black m-1 p-1 cursor-pointer rounded-md " key={item.index}>
                                 <h1 onClick={()=>{
-                                  setSelectTopic(item)
-                                }}> {item} </h1>
+                                  setSelectTopic(item.title)
+                                }}> {item.title} </h1>
                               </div>
                             ))}
                             </>
