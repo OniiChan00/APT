@@ -42,7 +42,7 @@ export default function Sidebar({ }: Props) {
         {
             index: 2,
             title: "Generate video",
-            link: "/home/"
+            link: "/generate/"
         },
         {
             index: 3,

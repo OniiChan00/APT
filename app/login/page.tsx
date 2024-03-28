@@ -7,7 +7,7 @@ import axios from 'axios'
 import { setCookie } from "cookies-next";
 import { redirect } from "next/dist/server/api-utils";
 
-
+const sever = 'http://13.210.146.132:8765/API/login'
 
 const inter = Josefin_Sans({
   weight: "700",

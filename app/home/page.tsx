@@ -20,13 +20,13 @@ type Props = {
   params: { slug: string };
 }
 
-export default function Login({params}: Props) {
+export default function Home({params}: Props) {
   const { slug } = params;
   const [username, setusername] = useState(getCookie('username'))
   return ( 
     <div className='flex justify-center border border-black h-screen -m-4 items-center shadow-outline '>
       <div className="border border-red-50 items-center min-w-[1000px] h-5/6 bg-gray-100 rounded-md text-black">
-               <h1> Welcome {username}</h1>
+               <h1> Welcome {username} </h1>
       </div>     
     </div>
   )
